@@ -7,14 +7,16 @@ import 'lenis/dist/lenis.css';
 export default function ScrollProvider() {
   useEffect(() => {
     const lenis = new Lenis({
-      smoothWheel: true,      // aktifkan smoothing scroll wheel
-      smoothTouch: false,     // bisa true kalau mau smoothing di touchscreen
-      lerp: 0.08,             // intensitas smoothing (0..1)
-      wheelMultiplier: 0.9,   // sensitifitas scroll wheel
+      // 'smooth' sudah dihapus di Lenis v1
+      smoothWheel: true,     // smoothing untuk wheel
+      smoothTouch: false,    // set true jika mau smoothing di touch
+      lerp: 0.08,            // 0..1 (lebih kecil = lebih halus)
+      wheelMultiplier: 0.9,  // sensitivitas scroll
+      // autoRaf: true,      // kalau true, hapus loop RAF manual di bawah
     });
 
-    // Loop animasi manual
-    let rafId: number;
+    // RAF loop manual
+    let rafId = 0;
     const raf = (time: number) => {
       lenis.raf(time);
       rafId = requestAnimationFrame(raf);
