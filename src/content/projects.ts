@@ -1,0 +1,7 @@
+export interface Project { title: string; description: string; tags: string[]; githubUrl?: string; liveUrl?: string; collaborators?: string[]; category: 'Data'|'AI'|'IoT'|'Web'|null }
+export const projects: Project[] = [
+  { title: 'Mobile Legends Player Analytics', description: 'Comparative analysis of K-Means vs DBSCAN for player segmentation (dashboard + insights).', tags: ['Python','React','Scikit-learn','Visualization'], liveUrl: 'https://mobilelegendsunique.up.railway.app', collaborators: [], category: 'Data' },
+  { title: 'Decodream (AI Platform)', description: 'AI-powered dream interpretation platform with modern UX and animated interactions.', tags: ['React','AI','UI/UX'], githubUrl: 'https://github.com/sngbd/decodream', collaborators: [], category: 'AI' },
+  { title: 'IoT Monitoring Kualitas Madu', description: 'Sistem monitoring kualitas madu (suhu, kelembapan, kadar air) dengan dashboard cloud.', tags: ['ESP32','Next.js','MQTT','Dashboard'], liveUrl: 'https://beemy-fe0b9.web.app', collaborators: ['Bima (Teman satu stambuk Mahasiswa — kolaborator)'], category: 'IoT' },
+  { title: 'EPL 2024/2025 Passing Networks (cGANs)', description: 'Analisis jaringan operan Liga Inggris menggunakan cGANs untuk sintesis dan evaluasi pola passing.', tags: ['Python','PyTorch','cGANs','DataViz'], liveUrl: 'https://siahaanplaymaker.streamlit.app/', collaborators: ['Samuel (Teman satu stambuk Mahasiswa — kolaborator)'], category: 'AI' }
+]
