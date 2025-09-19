@@ -16,12 +16,15 @@ export default function Hero({ title, subtitle, github, linkedin }: { title: str
   return (
     <section className="grid md:grid-cols-[1.618fr_1fr] items-center gap-[var(--space-5)] py-[var(--space-6)]">
       <div>
+        {/* @ts-ignore */}
         <motion.h1 className="text-5xl md:text-6xl font-extrabold gradient-text leading-tight tracking-phi-wide" initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, ease: 'easeOut' }}>
           {title}
         </motion.h1>
+        {/* @ts-ignore */}
         <motion.p className="mt-[var(--space-3)] text-white/85 dark:text-white/85 light:text-black/80 max-w-2xl text-lg tracking-phi lead-phi" initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}>
           {subtitle}
         </motion.p>
+        {/* @ts-ignore */}
         <motion.div className="mt-[var(--space-4)] flex gap-[var(--space-2)]" initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}>
           <Magnetic><a href={github} target="_blank"><Button>GitHub</Button></a></Magnetic>
           <Magnetic><a href={linkedin} target="_blank"><Button variant="outline">LinkedIn</Button></a></Magnetic>

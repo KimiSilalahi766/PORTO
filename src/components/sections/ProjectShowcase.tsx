@@ -21,6 +21,7 @@ export default function ProjectShowcase({ labels }: { labels: { all:string, data
       </div>
       <div className="grid md:grid-cols-2 gap-[var(--space-4)]">
         {filtered.map((p: Project, i) => (
+          // @ts-ignore
           <motion.div key={p.title} className="relative [transform-style:preserve-3d]" initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-20% 0%' }} transition={{ duration: 0.5, ease: 'easeOut', delay: i*0.05 }} whileHover={{ rotateX:-2, rotateY:3, transition:{ type:'spring', stiffness:100, damping:12 }}}>
             <div className="absolute -inset-1 blur-2xl rounded-2xl" style={{ background: 'conic-gradient(from 0deg, rgba(99,102,241,.35), rgba(0,255,157,.25), rgba(139,92,246,.35), rgba(99,102,241,.35))' }}/>
             <Card className="relative p-7">

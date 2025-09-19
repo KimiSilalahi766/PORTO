@@ -1,21 +1,13 @@
 {
   "compilerOptions": {
     "target": "ES2022",
-    "lib": [
-      "ES2023",
-      "DOM",
-      "DOM.Iterable"
-    ],
+    "lib": ["ES2023", "DOM", "DOM.Iterable"],
     "jsx": "preserve",
     "module": "ESNext",
     "moduleResolution": "Bundler",
     "strict": true,
     "baseUrl": ".",
-    "paths": {
-      "@/*": [
-        "./src/*"
-      ]
-    },
+    "paths": { "@/*": ["./src/*"] },
     "noUncheckedIndexedAccess": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
@@ -24,18 +16,14 @@
     "noEmit": true,
     "incremental": true,
     "allowJs": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ]
+    "plugins": [{ "name": "next" }]
   },
   "include": [
     "next-env.d.ts",
-    "src",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/types/**/*.d.ts"    // ✅ penting: baca deklarasi R3F
   ],
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules"]
 }
