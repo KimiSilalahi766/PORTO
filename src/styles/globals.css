@@ -13,7 +13,11 @@
   --bg: #0c1222;
   --fg: #e6e9f2;
 }
-html, body { height: 100% }
+
+html, body {
+  height: 100%;
+}
+
 body {
   margin: 0;
   background: radial-gradient(1200px 800px at 20% 10%, #0f172a, #0c1222 50%, #0a0f1a 100%);
@@ -22,14 +26,42 @@ body {
   -moz-osx-font-smoothing: grayscale;
   letter-spacing: 0.2px;
 }
-:root:not(.dark) { --bg: #f7f8fb; --fg: #0f172a }
-:root:not(.dark) body { background: var(--bg); color: var(--fg) }
 
-.container-phi { max-width: 72rem; width: 100%; padding: 0 var(--space-4); margin: 0 auto }
-.card-glass { background: rgba(255,255,255,.06); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,.08); box-shadow: 0 10px 30px rgba(0,0,0,.25) }
-:root:not(.dark) .card-glass { background: rgba(0,0,0,.03); border-color: rgba(0,0,0,.06) }
+:root:not(.dark) {
+  --bg: #f7f8fb;
+  --fg: #0f172a;
+}
+:root:not(.dark) body {
+  background: var(--bg);
+  color: var(--fg);
+}
 
-.gradient-text { background: linear-gradient(90deg,#6366f1,#8b5cf6,#00ff9d); -webkit-background-clip: text; background-clip: text; color: transparent }
+.container-phi {
+  max-width: 72rem;
+  width: 100%;
+  padding: 0 var(--space-4);
+  margin: 0 auto;
+}
+
+.card-glass {
+  background: rgba(255,255,255,.06);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,.08);
+  box-shadow: 0 10px 30px rgba(0,0,0,.25);
+}
+:root:not(.dark) .card-glass {
+  background: rgba(0,0,0,.03);
+  border-color: rgba(0,0,0,.06);
+}
+
+.gradient-text {
+  background: linear-gradient(90deg,#6366f1,#8b5cf6,#00ff9d);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 .tracking-phi { letter-spacing: 0.02em }
 .tracking-phi-wide { letter-spacing: 0.03em }
 .lead-phi { line-height: 1.618 }
@@ -37,8 +69,8 @@ body {
 /* Ambient background */
 .bg-wave {
   background:
-   radial-gradient(1200px 800px at 20% 10%, #0f172a, #0c1222 50%, #0a0f1a 100%),
-   conic-gradient(from 180deg at 50% 50%, rgba(99,102,241,.08), rgba(0,255,157,.06), rgba(139,92,246,.08), rgba(99,102,241,.08));
+    radial-gradient(1200px 800px at 20% 10%, #0f172a, #0c1222 50%, #0a0f1a 100%),
+    conic-gradient(from 180deg at 50% 50%, rgba(99,102,241,.08), rgba(0,255,157,.06), rgba(139,92,246,.08), rgba(99,102,241,.08));
   background-blend-mode: screen, normal;
   animation: hue 18s linear infinite;
 }
@@ -54,4 +86,74 @@ body {
   z-index: 1;
 }
 
-:root { font-family: var(--font-inter), system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial }
+:root {
+  font-family: var(--font-inter), system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial;
+}
+
+/* ========================================================= */
+/* ✅ Tambahan untuk responsive/overflow mobile              */
+/* ========================================================= */
+
+/* Cegah scroll horizontal */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Anak flex boleh menyusut */
+.flex > * { min-width: 0; }
+
+/* Media tidak boleh meluber */
+img, video, canvas, svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Bungkus kata/link panjang */
+.break-anywhere {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+/* Scroll horizontal chip list tanpa scrollbar */
+.no-scrollbar {
+  scrollbar-width: none; /* Firefox */
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* WebKit */
+}
+
+/* Padding aman untuk layar dengan notch */
+.safe-x {
+  padding-left: max(1rem, env(safe-area-inset-left));
+  padding-right: max(1rem, env(safe-area-inset-right));
+}
+
+/* Shadow lembut untuk kartu */
+.shadow-xl-soft {
+  box-shadow:
+    0 10px 25px -10px rgba(0,0,0,0.6),
+    0 20px 40px -20px rgba(0,0,0,0.5);
+}
+
+/* === Fix overflow khusus kartu glass === */
+.card-glass,
+.card-glass * { min-width: 0; } /* anak di dalam card boleh mengecil */
+
+.card-glass p,
+.card-glass a,
+.card-glass dd,
+.card-glass li,
+.card-glass span {
+  overflow-wrap: anywhere;  /* bungkus kata/link panjang */
+  word-break: break-word;
+}
+
+/* jaga padding kanan-kiri di layar HP/notch */
+.card-glass { padding-left: max(1rem, env(safe-area-inset-left)); padding-right: max(1rem, env(safe-area-inset-right)); }
+
+/* agar teks tidak nempel ke tepi di mobile */
+.card-body { padding: 1rem; }
+@media (min-width: 640px) { .card-body { padding: 1.5rem; } }
+@media (min-width: 768px) { .card-body { padding: 2rem; } }
