@@ -23,8 +23,8 @@ export default function ProjectPage({ params }:{ params: { slug: string } }) {
         </div>
         {p.collaborators?.length ? <p className="mt-2 text-xs opacity-80">Kolaborasi: {p.collaborators.join(', ')}</p> : null}
         <div className="mt-3 flex gap-2">
-          {p.liveUrl && <a href={p.liveUrl} target="_blank" className="underline">Live</a>}
-          {p.githubUrl && <a href={p.githubUrl} target="_blank" className="underline">GitHub</a>}
+          {p.liveUrl && <a href={p.liveUrl} target="_blank" rel="noopener noreferrer" className="underline">Live</a>}
+          {p.githubUrl && <a href={p.githubUrl} target="_blank" rel="noopener noreferrer" className="underline">GitHub</a>}
         </div>
       </MotionSection>
 

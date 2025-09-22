@@ -25,10 +25,16 @@ export default function Hero({ title, subtitle, github, linkedin }: { title: str
           {subtitle}
         </motion.p>
         {/* @ts-ignore */}
-        <motion.div className="mt-[var(--space-4)] flex gap-[var(--space-2)]" initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}>
-          <Magnetic><a href={github} target="_blank"><Button>GitHub</Button></a></Magnetic>
-          <Magnetic><a href={linkedin} target="_blank"><Button variant="outline">LinkedIn</Button></a></Magnetic>
-          <Magnetic><a href="https://iao.usu.ac.id/en/news/usu-students-took-part-at-humanitarian-program-in-malaysia" target="_blank"><Button variant="outline">IAO News</Button></a></Magnetic>
+        <motion.div className="mt-[var(--space-4)] flex flex-wrap gap-[var(--space-2)]" initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}>
+          <Magnetic><a href="https://www.instagram.com/kimsang.silalahi/" target="_blank" rel="noopener noreferrer"><Button variant="outline">IG</Button></a></Magnetic>
+          <Magnetic><a href="http://www.tiktok.com/@kim766__" target="_blank" rel="noopener noreferrer"><Button variant="outline">TikTok</Button></a></Magnetic>
+          <Magnetic><a href="https://x.com/kimsangsilalahi" target="_blank" rel="noopener noreferrer"><Button variant="outline">X</Button></a></Magnetic>
+          <Magnetic><a href="https://www.udemy.com/user/kimsang-silalahi/" target="_blank" rel="noopener noreferrer"><Button variant="outline">Udemy</Button></a></Magnetic>
+          <Magnetic><a href="https://dorahacks.io/hacker/kim_Silalahi" target="_blank" rel="noopener noreferrer"><Button variant="outline">DoraHacks</Button></a></Magnetic>
+          <Magnetic><a href="https://leetcode.com/u/Kim766/" target="_blank" rel="noopener noreferrer"><Button variant="outline">LeetCode</Button></a></Magnetic>
+          <Magnetic><a href={github} target="_blank" rel="noopener noreferrer"><Button>GitHub</Button></a></Magnetic>
+          <Magnetic><a href={linkedin} target="_blank" rel="noopener noreferrer"><Button variant="outline">LinkedIn</Button></a></Magnetic>
+          <Magnetic><a href="https://iao.usu.ac.id/en/news/usu-students-took-part-at-humanitarian-program-in-malaysia" target="_blank" rel="noopener noreferrer"><Button variant="outline">IAO News</Button></a></Magnetic>
         </motion.div>
       </div>
       <div className="flex items-center justify-center">

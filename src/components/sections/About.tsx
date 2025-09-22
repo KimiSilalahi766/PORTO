@@ -27,23 +27,6 @@ export default function About() {
           <dd>
             <a className="underline" href="mailto:kimsilalahi@gmail.com">kimsilalahi@gmail.com</a>
           </dd>
-
-          <dt className="text-slate-400">GitHub</dt>
-          <dd>
-            <a className="underline" href="https://github.com/KimiSilalahi766">KimiSilalahi766</a>
-          </dd>
-
-          <dt className="text-slate-400">LinkedIn</dt>
-          <dd>
-            <a className="underline" href="https://linkedin.com/in/kimsang-silalahi">kimsang-silalahi</a>
-          </dd>
-
-          <dt className="text-slate-400">International Affairs</dt>
-          <dd>
-            <a className="underline" href="https://iao.usu.ac.id/en/news/usu-students-took-part-at-humanitarian-program-in-malaysia">
-              IAO News
-            </a>
-          </dd>
         </dl>
       </div>
     </section>

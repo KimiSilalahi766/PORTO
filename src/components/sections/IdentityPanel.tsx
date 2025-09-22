@@ -22,19 +22,10 @@ export default function IdentityPanel({ title, summary }: { title: string, summa
                 <div className="grid grid-cols-[max-content_10px_1fr] gap-x-[0.5ch] gap-y-[calc(var(--space-phi)*0.7)] items-center">
                   <div className="text-[0.98rem] opacity-90 tracking-phi font-medium text-left">Phone</div>
                   <div className="text-[0.98rem] opacity-90 tracking-phi text-center">:</div>
-                  <div className="text-[0.98rem] opacity-90 tracking-phi"><a className="underline decoration-dotted" href="tel:+6281246894985" target="_blank">+62 812-4689-4985</a></div>
+                  <div className="text-[0.98rem] opacity-90 tracking-phi"><a className="underline decoration-dotted" href="tel:+6281246894985">+62 812-4689-4985</a></div>
                   <div className="text-[0.98rem] opacity-90 tracking-phi font-medium text-left">Email</div>
                   <div className="text-[0.98rem] opacity-90 tracking-phi text-center">:</div>
-                  <div className="text-[0.98rem] opacity-90 tracking-phi"><a className="underline decoration-dotted" href="mailto:kimsilalahi@gmail.com" target="_blank">kimsilalahi@gmail.com</a></div>
-                  <div className="text-[0.98rem] opacity-90 tracking-phi font-medium text-left">GitHub</div>
-                  <div className="text-[0.98rem] opacity-90 tracking-phi text-center">:</div>
-                  <div className="text-[0.98rem] opacity-90 tracking-phi"><a className="underline decoration-dotted" href="https://github.com/KimiSilalahi766" target="_blank">KimiSilalahi766</a></div>
-                  <div className="text-[0.98rem] opacity-90 tracking-phi font-medium text-left">LinkedIn</div>
-                  <div className="text-[0.98rem] opacity-90 tracking-phi text-center">:</div>
-                  <div className="text-[0.98rem] opacity-90 tracking-phi"><a className="underline decoration-dotted" href="https://id.linkedin.com/in/kimsang-silalahi-3a8b13308" target="_blank">kimsang-silalahi</a></div>
-                  <div className="text-[0.98rem] opacity-90 tracking-phi font-medium text-left">International Affairs</div>
-                  <div className="text-[0.98rem] opacity-90 tracking-phi text-center">:</div>
-                  <div className="text-[0.98rem] opacity-90 tracking-phi"><a className="underline decoration-dotted" href="https://iao.usu.ac.id/en/news/usu-students-took-part-at-humanitarian-program-in-malaysia" target="_blank">IAO News</a></div>
+                  <div className="text-[0.98rem] opacity-90 tracking-phi"><a className="underline decoration-dotted" href="mailto:kimsilalahi@gmail.com">kimsilalahi@gmail.com</a></div>
                 </div>
               </div>
             </div>

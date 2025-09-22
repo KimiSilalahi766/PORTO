@@ -19,12 +19,17 @@ export default function Page() {
 
   const skillset = [{ name:'Python', value:85 }, { name:'TypeScript', value:80 }, { name:'React', value:85 }, { name:'DataViz', value:75 }, { name:'IoT', value:65 }]
   const timeline = [
-    { title: 'Universitas Sumatera Utara', period: 'July 2021 – July 2025', detail: 'Bachelor of Computer Science, GPA 3.77/4.00' },
-    { title: 'Hackathon 11 — Decodream', period: '2024', detail: 'Team lead, AI platform' },
-    { title: 'Intern — Kemenkumham Medan', period: 'Jul–Aug 2024', detail: 'CI4, content & web' },
-    { title: 'Mobile Legends Player Analytics', period: '2024', detail: 'Dashboard analitik: K-Means vs DBSCAN' },
-    { title: 'IoT Monitoring Kualitas Madu', period: '2024', detail: 'Kolaborasi dengan Bima' },
-    { title: 'EPL Passing Networks (cGANs)', period: '2024/2025', detail: 'Kolaborasi dengan Samuel' }
+    { title: 'Sedang Mengerjakan/Mencari Sertifikat Pendukung', period: 'Sep 2025 – Ongoing', detail: 'AWS, IBM Blockchain Essentials, dan Google AI Engineering' },
+    { title: 'CareerVerse — Employment Recruiter (AI + ICP)', period: 'Sep 2025', detail: 'Marketplace lowongan kerja bertenaga AI dengan identitas terdesentralisasi' },
+    { title: 'TaniSayur — Online Grocery Store', period: 'Sep 2025', detail: 'Toko sayur & buah segar dari petani lokal dengan UI/UX modern' },
+    { title: 'Hackathon BUIDL — DoraHacks', period: 'Sep 2025', detail: 'Founder/Engineer, entri BUIDL dengan dokumentasi solusi' },
+    { title: 'EPL Passing Networks (cGANs)', period: 'Sep 2024 – 2025', detail: 'Kolaborasi dengan Samuel — analisis jaringan operan dengan AI' },
+    { title: 'Mobile Legends Player Analytics', period: 'Sep 2024', detail: 'Dashboard analitik: K-Means vs DBSCAN untuk segmentasi pemain' },
+    { title: 'IoT Monitoring Kualitas Madu', period: 'Aug 2024', detail: 'Kolaborasi dengan Bima — sistem monitoring dengan ESP32 & cloud dashboard' },
+    { title: 'Intern — Kemenkumham Medan', period: 'Jul–Aug 2024', detail: 'CodeIgniter 4, content management & web development' },
+    { title: 'Hackathon 11 — Decodream', period: 'Jun 2024', detail: 'Team lead, AI-powered dream interpretation platform' },
+    { title: 'International Affairs Program', period: 'Oktober 2023-Januari 2024', detail: 'USU Students Humanitarian Program in Malaysia (IAO News)' },
+    { title: 'Universitas Sumatera Utara', period: 'July 2021 – July 2025', detail: 'Bachelor of Computer Science, GPA 3.78/4.00' }
   ]
 
   return (
