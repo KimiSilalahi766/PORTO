@@ -21,13 +21,12 @@ export default function Hero({ title, subtitle, github, linkedin }: { title: str
           {title}
         </motion.h1>
         {/* @ts-ignore */}
-        <motion.p className="mt-[var(--space-3)] text-white/85 dark:text-white/85 light:text-black/80 max-w-2xl text-lg tracking-phi lead-phi" initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}>
+        <motion.p className="mt-[var(--space-3)] text-slate-700 dark:text-white/85 max-w-2xl text-lg tracking-phi lead-phi" initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}>
           {subtitle}
         </motion.p>
         {/* @ts-ignore */}
         <motion.div className="mt-[var(--space-4)] flex flex-wrap gap-[var(--space-2)]" initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}>
           <Magnetic><a href="https://www.instagram.com/kimsang.silalahi/" target="_blank" rel="noopener noreferrer"><Button variant="outline">IG</Button></a></Magnetic>
-          <Magnetic><a href="http://www.tiktok.com/@kim766__" target="_blank" rel="noopener noreferrer"><Button variant="outline">TikTok</Button></a></Magnetic>
           <Magnetic><a href="https://x.com/kimsangsilalahi" target="_blank" rel="noopener noreferrer"><Button variant="outline">X</Button></a></Magnetic>
           <Magnetic><a href="https://www.udemy.com/user/kimsang-silalahi/" target="_blank" rel="noopener noreferrer"><Button variant="outline">Udemy</Button></a></Magnetic>
           <Magnetic><a href="https://dorahacks.io/hacker/kim_Silalahi" target="_blank" rel="noopener noreferrer"><Button variant="outline">DoraHacks</Button></a></Magnetic>
