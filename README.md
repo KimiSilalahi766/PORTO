@@ -65,7 +65,7 @@ PORTO/
 ### Langkah
 ```bash
 # 1. Clone repo ini
-git clone https://github.com/username/PORTO.git
+git clone https://github.com/KimiSilalahi766/PORTO.git
 
 # 2. Masuk folder
 cd PORTO
@@ -97,8 +97,8 @@ Saya sedang mencari kesempatan kerja dengan posisi:
 - **IoT Engineer**  
 - **Full-Stack Developer**  
 
-📧 Hubungi saya di: **your.email@example.com**  
-🔗 LinkedIn: [linkedin.com/in/kimsang](https://linkedin.com/in/kimsang)
+📧 Hubungi saya di: **kimsilalahi@gmail.com**  
+🔗 LinkedIn: [linkedin.com/in/kimsang](https://www.linkedin.com/in/kimsang-silalahi-3a8b13308/)
 
 ---
 
