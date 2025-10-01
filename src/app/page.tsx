@@ -4,6 +4,7 @@ import ProjectShowcase from '@/components/sections/ProjectShowcase'
 import IdentityPanel from '@/components/sections/IdentityPanel'
 import SkillRadar from '@/components/sections/SkillRadar'
 import Timeline from '@/components/sections/Timeline'
+import Certificates from '@/components/sections/Certificates'
 import MotionSection from '@/components/MotionSection'
 import QuickPalette from '@/components/QuickPalette'
 import { resumeData } from '@/content/resume'
@@ -37,6 +38,7 @@ export default function Page() {
 
       <MotionSection delay={0.05}><IdentityPanel title={t.ident.title} summary={t.ident.summary} /></MotionSection>
       <MotionSection delay={0.1}><h2 className="text-2xl font-semibold mb-[var(--space-2)]">{t.nav.projects}</h2><ProjectShowcase labels={t.filters} /></MotionSection>
+      <MotionSection delay={0.13}><Certificates title={t.nav.certificates} /></MotionSection>
       <MotionSection delay={0.15}>
         <section className="grid md:grid-cols-2 gap-[var(--space-4)]">
           <div><h3 className="text-2xl font-semibold mb-[var(--space-2)]">{t.nav.skills}</h3><SkillRadar data={skillset} /></div>
