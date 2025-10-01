@@ -41,50 +41,50 @@ export default function ProjectDetailClient({ project: p, slug }: Props) {
 
       {isMLProject && (
         <MotionSection delay={0.1}>
-          <h2 className="mt-6 text-xl font-semibold tracking-tight">Case Study</h2>
+          <h2 className="mt-6 text-xl font-semibold tracking-tight">Case Study Details</h2>
           <div className="prose prose-invert dark:prose-invert prose-slate mt-2 max-w-none text-[0.97rem] leading-tight">
-            <h3 className="text-lg font-bold mb-1">K-Means vs DBSCAN: Segmentasi Pemain Medan</h3>
-            <p className="mb-1"><b>Problem:</b> Profil pemain di Medan beragam, sulit dikelompokkan secara efektif untuk strategi dan matchmaking.</p>
-            <p className="mb-1"><b>Metode:</b> Analisis data performa (KDA, Win Rate, GPM, role, hero) dengan K-Means & DBSCAN.</p>
+            <h3 className="text-lg font-bold mb-1">K-Means vs DBSCAN: Medan Player Segmentation</h3>
+            <p className="mb-1"><b>Problem:</b> Player profiles in Medan are diverse, difficult to group effectively for strategy and matchmaking.</p>
+            <p className="mb-1"><b>Method:</b> Performance data analysis (KDA, Win Rate, GPM, role, hero) using K-Means & DBSCAN.</p>
             <ul className="mb-1 ml-4 list-disc">
-              <li>Klaster: "Carries", "Objective-Oriented", "Casual".</li>
-              <li>DBSCAN lebih akurat deteksi pemain unik/anomali (Silhouette: 0.68 vs 0.54).</li>
-              <li>Insight: Segmentasi memudahkan promosi, event, dan matchmaking adil.</li>
+              <li>Clusters: "Carries", "Objective-Oriented", "Casual".</li>
+              <li>DBSCAN more accurate in detecting unique/anomaly players (Silhouette: 0.68 vs 0.54).</li>
+              <li>Insight: Segmentation facilitates promotion, events, and fair matchmaking.</li>
             </ul>
-            <p className="mb-0"><b>Next:</b> Integrasi data chat, prediksi churn, dashboard otomatis.</p>
+            <p className="mb-0"><b>Next:</b> Chat data integration, churn prediction, automated dashboard.</p>
           </div>
         </MotionSection>
       )}
       {isEPLProject && (
         <MotionSection delay={0.1}>
-          <h2 className="mt-6 text-xl font-semibold tracking-tight">Case Project</h2>
+          <h2 className="mt-6 text-xl font-semibold tracking-tight">Case Study Details</h2>
           <div className="prose prose-invert dark:prose-invert prose-slate mt-2 max-w-none text-[0.97rem] leading-tight">
             <h3 className="text-lg font-bold mb-1">CGAN Premier League Passing Networks</h3>
-            <p className="mb-1"><b>Problem:</b> Analisis passing tradisional terbatas, tidak bisa prediksi pola baru. Tim butuh simulasi taktik real-time.</p>
-            <p className="mb-1"><b>Approach:</b> CGAN (Generator/Discriminator), data FPL 2024/2025, input: formasi, gaya main, kreativitas. Web UI real-time, 5 formasi utama.</p>
+            <p className="mb-1"><b>Problem:</b> Traditional passing analysis is limited, cannot predict new patterns. Teams need real-time tactical simulations.</p>
+            <p className="mb-1"><b>Approach:</b> CGAN (Generator/Discriminator), EPL 2024/2025 data, inputs: formation, playing style, creativity. Real-time web UI, 5 main formations.</p>
             <ul className="mb-1 ml-4 list-disc">
-              <li>100% test pass, AI hasilkan passing networks baru</li>
-              <li>6 fitur analisis taktik interaktif, visual tebal/curve/marker</li>
-              <li>Loading &lt;10 detik, support multi-browser, akses bersamaan</li>
+              <li>100% test pass, AI generates new passing networks</li>
+              <li>6 interactive tactical analysis features, thickness/curve/marker visuals</li>
+              <li>Loading &lt;10 seconds, multi-browser support, concurrent access</li>
             </ul>
-            <p className="mb-0"><b>Next:</b> Integrasi data match real-time, ekspansi liga, mobile app, AI prediksi cedera, video analysis.</p>
+            <p className="mb-0"><b>Next:</b> Real-time match data integration, league expansion, mobile app, AI injury prediction, video analysis.</p>
           </div>
         </MotionSection>
       )}
       {isHoneyProject && (
         <MotionSection delay={0.1}>
-          <h2 className="mt-6 text-xl font-semibold tracking-tight">Case Project</h2>
+          <h2 className="mt-6 text-xl font-semibold tracking-tight">Case Study Details</h2>
           <div className="prose prose-invert dark:prose-invert prose-slate mt-2 max-w-none text-[0.97rem] leading-tight">
-            <h3 className="text-lg font-bold mb-1">IoT Monitoring Kualitas Madu Trigona</h3>
-            <p className="mb-1"><b>Problem:</b> Kualitas madu sulit dijaga tanpa monitoring real-time. Peternak butuh sistem otomatis & akurat.</p>
-            <p className="mb-1"><b>Approach:</b> ESP32 + 5 sensor (DHT22, pH, MQ-135, TDS, LDR), data ke Firebase, klasifikasi K-NN (K=5), dashboard web realtime.</p>
+            <h3 className="text-lg font-bold mb-1">IoT Monitoring Trigona Honey Quality</h3>
+            <p className="mb-1"><b>Problem:</b> Honey quality is difficult to maintain without real-time monitoring. Beekeepers need an automated & accurate system.</p>
+            <p className="mb-1"><b>Approach:</b> ESP32 + 5 sensors (DHT22, pH, MQ-135, TDS, LDR), data to Firebase, K-NN classification (K=5), real-time web dashboard.</p>
             <ul className="mb-1 ml-4 list-disc">
-              <li>315 data uji, 3 jenis madu Trigona</li>
-              <li>Akurasi 88,25%, precision 92,7% (Baik), recall 89,6% (Sangat Baik)</li>
-              <li>TDS & pH = faktor utama, confidence 85-92%</li>
-              <li>Dashboard: visualisasi & alert otomatis</li>
+              <li>315 test data, 3 types of Trigona honey</li>
+              <li>Accuracy 88.25%, precision 92.7% (Good), recall 89.6% (Very Good)</li>
+              <li>TDS & pH = main factors, confidence 85-92%</li>
+              <li>Dashboard: visualization & automatic alerts</li>
             </ul>
-            <p className="mb-0"><b>Next:</b> Integrasi API data real-time, ekspansi ke peternakan lain, prediksi kualitas & mobile app.</p>
+            <p className="mb-0"><b>Next:</b> Real-time data API integration, expansion to other farms, quality prediction & mobile app.</p>
           </div>
         </MotionSection>
       )}

@@ -7,14 +7,14 @@ export default function Timeline({ title, items }: { title: string, items: { tit
       <Card>
         <div className="text-xl font-semibold tracking-phi-wide mb-[var(--space-2)]">{title}</div>
         <div className="relative pl-6">
-          <div className="absolute left-1 top-0 bottom-0 w-[2px] bg-white/20" />
+          <div className="absolute left-1 top-0 bottom-0 w-[2px] bg-slate-300 dark:bg-white/20" />
           {items.map((it, i) => (
             <div key={i} className="mb-[var(--space-2)] relative">
               <div className="w-2 h-2 rounded-full bg-accent absolute left-0 translate-x-[-5px] translate-y-[10px]" />
               <div className="ml-1.5">
-                <div className="font-semibold tracking-phi">{it.title}</div>
-                <div className="text-sm text-white/70 tracking-phi">{it.period}</div>
-                <p className="text-white/85 tracking-phi lead-phi mt-1">{it.detail}</p>
+                <div className="font-semibold tracking-phi text-slate-900 dark:text-white">{it.title}</div>
+                <div className="text-sm text-slate-600 dark:text-white/70 tracking-phi">{it.period}</div>
+                <p className="text-slate-700 dark:text-white/85 tracking-phi lead-phi mt-1">{it.detail}</p>
               </div>
             </div>
           ))}
